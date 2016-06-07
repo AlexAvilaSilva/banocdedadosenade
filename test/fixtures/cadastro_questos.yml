@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  enunciado: MyText
+  titulo: MyString
+  resposta1: MyString
+  resposta2: MyString
+  resposta3: MyString
+  resposta4: MyString
+  resposta5: MyString
+  correta: 
+  disciplina: MyString
+
+two:
+  enunciado: MyText
+  titulo: MyString
+  resposta1: MyString
+  resposta2: MyString
+  resposta3: MyString
+  resposta4: MyString
+  resposta5: MyString
+  correta: 
+  disciplina: MyString

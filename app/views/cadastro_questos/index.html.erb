@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listando Cadastro Questões</h1>
+
+<table>
+  <thead>
+    <tr class="vermelho">
+      <th>Enunciado</th>
+      <th>Titulo</th>
+      <th>Resposta1</th>
+      <th>Resposta2</th>
+      <th>Resposta3</th>
+      <th>Resposta4</th>
+      <th>Resposta5</th>
+      <th>Correta</th>
+      <th>Disciplina</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cadastro_questos.each do |cadastro_questo| %>
+      <tr>
+        <td><%= cadastro_questo.enunciado %></td>
+        <td><%= cadastro_questo.titulo %></td>
+        <td><%= cadastro_questo.resposta1 %></td>
+        <td><%= cadastro_questo.resposta2 %></td>
+        <td><%= cadastro_questo.resposta3 %></td>
+        <td><%= cadastro_questo.resposta4 %></td>
+        <td><%= cadastro_questo.resposta5 %></td>
+        <td><%= cadastro_questo.correta %></td>
+        <td><%= cadastro_questo.disciplina %></td>
+        <td><%= link_to 'Visualizar', cadastro_questo %></td>
+        <td><%= link_to 'Editar', edit_cadastro_questo_path(cadastro_questo) %></td>
+        <td><%= link_to 'Deleta', cadastro_questo, method: :delete, data: { confirm: 'Você tem certeza disso?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Cadastro de Questões', new_cadastro_questo_path %>

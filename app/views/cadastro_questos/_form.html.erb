@@ -1,0 +1,53 @@
+<%= form_for(@cadastro_questo) do |f| %>
+  <% if @cadastro_questo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cadastro_questo.errors.count, "error") %> prohibited this cadastro_questo from being saved:</h2>
+
+      <ul>
+      <% @cadastro_questo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :enunciado %><br>
+    <%= f.text_area :enunciado %>
+  </div>
+  <div class="field">
+    <%= f.label :titulo %><br>
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :resposta1 %><br>
+    <%= f.text_field :resposta1 %>
+  </div>
+  <div class="field">
+    <%= f.label :resposta2 %><br>
+    <%= f.text_field :resposta2 %>
+  </div>
+  <div class="field">
+    <%= f.label :resposta3 %><br>
+    <%= f.text_field :resposta3 %>
+  </div>
+  <div class="field">
+    <%= f.label :resposta4 %><br>
+    <%= f.text_field :resposta4 %>
+  </div>
+  <div class="field">
+    <%= f.label :resposta5 %><br>
+    <%= f.text_field :resposta5 %>
+  </div>
+  <div class="field">
+    <%= f.label :correta %><br>
+    <%= f.text_field :correta %>
+  </div>
+  <div class="field">
+    <%= f.label :disciplina %><br>
+    <%= f.text_field :disciplina %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

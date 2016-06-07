@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Enunciado:</strong>
+  <%= @cadastro_questo.enunciado %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @cadastro_questo.titulo %>
+</p>
+
+<p>
+  <strong>Resposta1:</strong>
+  <%= @cadastro_questo.resposta1 %>
+</p>
+
+<p>
+  <strong>Resposta2:</strong>
+  <%= @cadastro_questo.resposta2 %>
+</p>
+
+<p>
+  <strong>Resposta3:</strong>
+  <%= @cadastro_questo.resposta3 %>
+</p>
+
+<p>
+  <strong>Resposta4:</strong>
+  <%= @cadastro_questo.resposta4 %>
+</p>
+
+<p>
+  <strong>Resposta5:</strong>
+  <%= @cadastro_questo.resposta5 %>
+</p>
+
+<p>
+  <strong>Correta:</strong>
+  <%= @cadastro_questo.correta %>
+</p>
+
+<p>
+  <strong>Disciplina:</strong>
+  <%= @cadastro_questo.disciplina %>
+</p>
+
+<%= link_to 'Editar', edit_cadastro_questo_path(@cadastro_questo) %> |
+<%= link_to 'Voltar', cadastro_questos_path %>
